@@ -1,0 +1,167 @@
+<!--
+	1. ul无序列表，ol有序列表；
+	2. a标签放在li标签外或者标签内都能实现链接样式，具体肯定还会有区别。另外a标签如果不加href属性，那么只会以文本样式展现。一般是li标签包含a标签。
+	3. p标签中文字的多个空格最后也只会转成一个空格
+	4. 文本中粗体是用b标签还是strong标签？最后才使用b标签。
+	根据 HTML5 规范，在没有其他合适标签更合适时，才应该把 <b> 标签作为最后的选项。HTML5 规范声明：应该使用 <h1> - <h6> 来表示标题，使用 <em> 标签来表示强调的文本，应该使用 <strong> 标签来表示重要文本，应该使用 <mark> 标签来表示标注的/突出显示的文本。
+	5. 编辑器中回车会产生空格。怎么避免？写注释的时候才会用回车，html中用<br>标签就行。
+	6. 表头格表头怎么设置？与表格行之间的区别在哪？th标签就是表头，有几个th就用占几个单元格。自动加粗样式。
+	7. 对于选择框、文本输入框不熟悉。以及他们的标签是怎么设定的？
+		。单选按钮 <label><input type='radio'>content</label>
+		。多选按钮 <label><input type='checkbox'>content</label>
+		。下拉选择 <select>
+						<option value='val'>content</option>
+						<option value='val'>content</option>
+					</select>
+		。文本输入 <textarea>content</textarea>，可添加col和row属性改变输入框大小。
+	8. input一般属于表单中元素，输入框中的值需要作为value提交给后端，因此部分元素需要添加value属性并赋值""。不同标签value含义不同。
+	9. label标签的for属性下，input标签中id属性对应for属性的值。不是name属性。 name 属性用于对提交到服务器后的表单数据进行标识,或者在客户端通过 JavaScript 引用表单数据。
+		label标记两种方式：第一种<label><input ...></label>将表单控件作为标记标签的内容，隐式形式; 或者为 <label> 标签下的 for 属性命名一个目标表单 id，这样就是显式形式。
+	10. input标签的value属性
+		对于按钮：规定按钮上的文本
+		对于图像按钮：传递到脚本的字段的符号结果
+		对于复选框和单选按钮：定义 input 元素被点击时的结果。
+		对于隐藏、密码和文本字段：规定元素的默认值。
+		注释：不能与 type="file" 一同使用。
+		注释：对于 type="checkbox" 以及 type="radio"，是必需的。
+	
+--><!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'>
+</head>
+<body>
+	<h1>网站一级标题</h1>
+	<ul>
+		<li><a href='#'>导航链接一</a></li>
+		<li><a href='#'>导航链接二</a></li>
+		<li><a href='#'>导航链接三</a></li>
+		<li><a href='#'>导航链接四</a></li>	
+	</ul>
+	<h2>文章一级标题</h2>
+	<h3>文章二级标题</h3>
+	<p>文章作者 文章发表时间</p>
+	<p>这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。<br/>这是一个很长很长的段落。这是一个很长很长的段落。换行了<br/>这是一个很长很长的段落。这是一个很长很长的段落。<a href='#'>这里是一个跳转链接http://www.ife.com</a>这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段。<b>这里有段粗体文字</b>这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。</p>
+	<img src='task-img.png'>
+	<p>这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。<br/>这是一个很长很长的段落。这是一个很长很长的段落。换行了<br/>这是一个很长很长的段落。这是一个很长很长的段落。<a href='#'>这里是一个跳转链接http://www.ife.com</a>这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段。<b>这里有段粗体文字</b>这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。</p>
+	
+	<h2>另一篇文章的一级标题</h2>
+	<h3>文章的二级标题</h3>
+	<p>文章作者 发表时间</p>
+	<p>这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。<br/>这是一个很长很长的段落。这是一个很长很长的段落。换行了<br/>这是一个很长很长的段落。这是一个很长很长的段落。<a href='#'>这里是一个跳转链接http://www.ife.com</a>这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段。<b>这里有段粗体文字</b>这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。这是一个很长很长的段落。</p>
+	<ul>
+		<li>列表项目一</li>
+		<li>列表项目二</li>
+		<li>列表项目三</li>
+	</ul>
+	<h2>图片</h2>
+	<figure>
+	<figcaption>好看的图片</figcaption>
+	<img src='task-img.png'>
+	</figure>
+	<figure>
+	<figcaption>好看的图片</figcaption>
+	<img src='task-img.png'>
+	</figure>
+	<figure>
+	<figcaption>好看的图片</figcaption>
+	<img src='task-img.png'>
+	</figure>
+	<figure>
+	<figcaption>好看的图片</figcaption>
+	<img src='task-img.png'>
+	</figure>
+	<figure>
+	<figcaption>好看的图片</figcaption>
+	<img src='task-img.png'>
+	</figure>
+	<figure>
+	<figcaption>好看的图片</figcaption>
+	<img src='task-img.png'>
+	</figure>
+	<figure>
+	<figcaption>好看的图片</figcaption>
+	<img src='task-img.png'>
+	</figure>
+	<figure>
+	<figcaption>好看的图片</figcaption>
+	<img src='task-img.png'>
+	</figure>
+	<figure>
+	<figcaption>好看的图片</figcaption>
+	<img src='task-img.png'>
+	</figure>
+	<figure>
+	<figcaption>好看的图片</figcaption>
+	<img src='task-img.png'>
+	</figure>
+	<h2>最后一篇文章一级标题</h2>
+	<h3>文章二级标题</h3>
+	<p>文章作者 文章发表时间</p>
+	<ol>
+		<li>排名1</li>
+		<li>排名2</li>
+		<li>排名3</li>
+	</ol>
+	<p>下面是一个表格，给了border属性，能看出是列表</p>
+	<table border=1>
+	<th>表头</th>
+	<th>表头</th>
+	<th>表头</th>
+	<tr>
+		<td>表格单元内容</td>
+		<td>表格单元内容</td>
+		<td>操作</td>
+	</tr>
+	<tr>
+		<td>表格单元内容</td>
+		<td>表格单元内容</td>
+		<td>操作</td>
+	</tr>
+	<tr>
+		<td>表格单元内容</td>
+		<td>表格单元内容</td>
+		<td>操作</td>
+	</tr>
+	<tr>
+		<td colspan=2>总计</td>
+		<td>1000</td>
+	</tr>
+	</table>
+	<h2>这里以后是一个侧边栏，这是侧栏的标题</h2>
+	<h3>侧栏注册窗口标题</h3>
+	<form>
+	<label for='email'>请输入邮箱地址：</label>
+	<input type='email' name='email' id='email'>
+	<p>邮箱地址请按要求格式输入</p>
+	<label for='password'>请输入密码：</label>
+	<input type='password' name='password' id='password'>
+	<label for='retry'>请重复输入密码：</label>
+	<input type='password' name='retry' id='retry'>
+	<p>密码为6-16位英文数字</p>
+	
+	<label for='sex'>性别：</label>
+	<label><input type='radio' name='sex' id='sex' value='男'>男</label>
+	<label><input type='radio' name='sex' id='sex' value='女'>女</label>
+	
+	<label for='city'>城市：</label>
+	<select name='city' value='' id='city' >
+		<option value='beijing'>北京</option>
+		<option value='shanghai'>上海</option>
+		<option value='guangzhou'>广州</option>
+	</select>
+	
+	<label for='aihao'>爱好：</label>
+	<label><input type='checkbox' value='' >科研</label>
+	<label><input type='checkbox' value='' >运动</label>
+	<label><input type='checkbox' value=''>艺术</label>
+	
+	<label for='miaoshu'>个人描述：</label>
+	<textarea name='miaoshu' id='miaoshu'></textarea>
+	
+	<input type='submit' name='submit' value='确认提交'>
+	
+	</form>
+	<p>版权所有&copy;</p>
+</body>
+</html>
