@@ -1,0 +1,32 @@
+body {
+	padding: 20px;
+	border: 1px #999 solid;
+}
+.wrapper {
+	background-color: #eee;
+}
+.logo {
+	width: 200px;
+	height: 150px;
+	float: left;
+}
+.logo .logopic {
+	width: 80px;
+	height: 80px;
+	background-image: url(01.jpg);
+}
+.content {
+	width: 500px;
+	height: 800px;
+}
+.person {
+	width: 120px;
+	float: left;
+}
+.person .a, .person .b, .person .c, .person .d {
+	width: 80px;
+	height: 80px;
+	background-image: url(01.jpg);
+	margin:10px 10px;
+	
+} 

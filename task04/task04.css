@@ -1,0 +1,39 @@
+.wraper {
+	width:400px;
+	height: 200px;
+	position:absolute;
+	background-color: #eef;
+	top: 50%;
+	left: 50%;
+	margin:-100px -200px;
+}
+
+.main {
+	width: 400px;
+	height: 200px;
+	position: relative;
+	margin: 0 auto;
+	/*top: 0;
+	bottom: 0;
+*/	background-color: #333;
+	overflow: hidden;
+}
+/*垂向上居中不会*/
+
+.first, .second {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #ccc;
+
+}
+.first {
+	top:-50px;
+	left:-50px;
+}
+.second {
+	bottom:-50px;
+	right:-50px;
+}
+/*位移位置不会计算*/
