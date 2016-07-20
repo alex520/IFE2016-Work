@@ -1,0 +1,146 @@
+body {
+	background-color: #dedede;
+}
+
+#hd {
+	background-color: #333;
+	height: 60px;
+}
+#hd .logo {
+	width: 116px;
+	height: 36px;
+	margin: 12px 40px;
+	float: left;
+	/*vertical-align: center; 这个样式设置无效，无法居中*/ 
+}
+
+#hd .link {
+	float: right;
+}
+#hd .link ul {
+	display: inline;
+}
+#hd .link ul li {
+	display: block;
+	float: right;
+	margin: 24px 20px;
+	color: #fff;
+}
+/*头部*/
+
+.main {
+	width: 65%;
+	float: left;
+}
+
+/*文章*/
+.first, .second, .pic, .last, .form {
+	margin: 20px 20px;
+	padding: 30px 20px;
+	background-color: #fff;
+}
+article p {
+	text-indent: 2em;
+}
+
+.second ul li {
+	list-style: none;
+}
+
+/*图片*/
+.pic{
+	overflow: hidden;
+}
+figure {
+	margin: 10px 10px;
+	display: inline-block;
+
+}
+
+
+
+/*最后一段*/
+.last p {
+	text-indent: 0;
+}
+
+/*表格*/
+
+table {
+	width: 100%;
+}
+
+.last tr td:first-child,  .last tr td:nth-child(2){
+	width: 400px;
+}
+.last tr td:last-child {
+	width: 200px;
+}
+.last tr:first-child {
+	background-color: #333;
+	color: #fff;
+}
+.last tr:last-child {
+	background-color: #cdcdcd;
+	color: #333;
+}
+/*表单*/
+.formlist {
+	width: 500px;
+}
+
+.form {
+	width: 28%;
+	float:left;
+}
+.form h2 {
+	border-left: 4px #ccc solid;
+}
+.formlist {
+
+	margin: 0 auto;
+}
+.form  p {
+	font-size: 8px;
+	color: #666;
+	margin-left: 130px;
+	margin-top: -1px;
+}
+
+.submitbtn {
+	width: 200px;
+}
+
+.password {
+	margin-left: 31px;
+}
+.sex, .city, .aihao {
+	margin-left:80px;
+}
+
+.miaoshu {
+	margin-left: 50px;
+}
+
+.submitbtn {
+	margin-left: 80px;
+}
+
+footer {
+	clear: both;
+	background-color: #333;
+	color:#fff;
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+	width:100%;
+/*	position: fixed;
+	bottom: 0;*/
+}
+
+/*
+浮动之后，基于父元素不能居中吗？
+figcaption 好像用的都很少？怎么改？
+表格宽度问题，应该怎么设置？
+表单的格式，颜色设置？
+*/
