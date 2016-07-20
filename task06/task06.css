@@ -1,0 +1,123 @@
+.wraper {
+	width: 980px;
+	height: 1386px;
+	margin: 0 auto;
+	padding: 0 44px;
+}
+/*头部*/
+#hd {
+	width: 892px;
+	height: 61px;
+	border-bottom: 2px solid #938e8c;
+	margin:0 auto;
+	position: relative;
+}
+
+#hd .bgimg {
+	width: 110px;
+	height: 61px;
+	position: absolute;
+	background-image: url(images/01.png);
+}
+/*上部*/
+.main .top .topl {
+	width: 641px;
+	float: left;
+	margin-left: 44px;
+	margin-top: 40px;
+}
+/*margin-top 要算*/
+.main .top .topr {
+	width: 203px;
+	border-top: 2px #cc8091 solid;
+	float: right;
+	margin-right: 44px;
+	margin-top: 40px;
+}
+
+/*上部左边*/
+.main .top .topl .img {
+	width: 641px;
+	height: 301px;
+	/*position: absolute;*/
+	background-image: url(images/02.png);
+	background-color: #eee;
+	/*float: left;*/
+}
+/*头部三栏*/
+.fir {
+	float: left;
+	width: 35%;
+	height: 70px;
+	margin: 44px 0;
+	background-color: #333;
+}
+.sec {
+	float: left;
+	width: 30%;
+	height: 70px;
+	margin: 44px 20px;
+	background-color: #333;
+}
+.thr {
+	float: right;
+	width: 28%;
+	height: 70px;
+	margin: 44px 0;
+	background-color: #333;
+}
+
+/*下部*/
+.btm {
+	clear: both;
+	width: 892px;
+	margin:0 auto;
+	padding: 0 44px;
+}
+/*下左上*/
+.btm .btml {
+	float: left;
+	width: 415px;
+}
+
+
+.btm .btml .btmlt {
+	width: 415px;
+	height: 154px;
+	border-bottom: 1px solid #938e8c;
+}
+
+/*下右*/
+.btmr {
+	float: right;
+	margin-top: 40px;
+	background-color: #eee;
+	width: 458px;
+}
+
+/*下右上*/
+.btmr .btmr-top {
+	width: 458px;
+	height: 275px;
+	background-image: url(images/03.png);	
+}
+/*下右下*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+父div浮动了，子div会不会跟着浮动？应该会啊,为什么头部div.img不显示呢？
+绝对定位脱离文档流了影响排版吗？
+*/
