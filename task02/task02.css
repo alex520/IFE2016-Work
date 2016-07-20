@@ -49,6 +49,10 @@ article p {
 
 /*表格*/
 
+table {
+	width: 100%;
+}
+
 .last tr td:first-child,  .last tr td:nth-child(2){
 	width: 400px;
 }
@@ -64,15 +68,54 @@ article p {
 	color: #333;
 }
 /*表单*/
-.form .aside {
+.formlist {
+	width: 500px;
+}
+
+.form h2 {
 	border-left: 4px #ccc solid;
 }
 .formlist {
-	background-color: #ccc;
-	height: 800px;
+
 	margin: 0 auto;
-	text-align: center;
 }
+.form  p {
+	font-size: 8px;
+	color: #666;
+	margin-left: 130px;
+	margin-top: -1px;
+}
+
+.submitbtn {
+	width: 200px;
+}
+
+.password {
+	margin-left: 31px;
+}
+.sex, .city, .aihao {
+	margin-left:80px;
+}
+
+.miaoshu {
+	margin-left: 100px;
+}
+
+.submitbtn {
+	margin-left: 40px;
+}
+
+footer {
+	background-color: #333;
+	color:#fff;
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+	width:100%;
+/*	position: fixed;
+	bottom: 0;*/
+}
+
 /*
 浮动之后，基于父元素不能居中吗？
 figcaption 好像用的都很少？怎么改？
