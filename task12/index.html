@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task12</title>
+	<link rel="stylesheet" href="">
+	<style>
+		/*table style*/
+		/*宽度设置*/
+		table tr td:first-child {
+			width: 100px;
+		}
+		table tr td:nth-child(2) {
+			width: 200px;
+		}
+		table tr td:last-child {
+			width: 100px;
+		}
+		/*颜色设置*/
+		table tr:nth-child(odd){
+			background-color: #ccc;
+		}
+		
+		table tr:first-child {
+			background-color: #333;
+			color:#fff;
+		}
+		
+		table tr:nth-child(4), table tr:nth-child(2), table tr:nth-child(3) {
+			color: #f00;
+		}
+		
+		table tr:nth-child(n+2):hover{
+			background-color: #eee;
+		}
+
+		/*input :focus*/
+		input {
+			transition: 0.5s all ease-in;
+			width: 150px;
+			height: 20px;
+			transform-origin: 0 0;
+		}
+		input:focus {
+			width: 300px;
+			height: 35px;
+			box-shadow: 2px 2px 5px #333;
+			transition: 0.3s all ease-in;
+
+		}
+		.banner{
+			width: 230px;
+			height: 230px;
+			overflow: hidden;
+		}
+
+		/*banner*/
+		@keyframes move {
+			from {transform:translateY(0);}
+			33% {transform:translateY(-230px);}
+			66% {transform:translateY(-460px);}
+			to {transform:translateY(0);}
+		}
+
+		.img {
+			animation: move 5s;
+			animation-iteration-count:infinite;
+		}
+		.img:hover {
+			animation: move 5s;
+			animation-iteration-count:infinite;
+			animation-play-state: paused;	
+			cursor: pointer;
+		}
+
+		/*number-index*/
+		.wraper {
+			position: relative;
+			width: 230px;
+			height: 230px;
+		}
+		.one, .two, .thr {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+		}
+		.one {
+			top: 0;
+			left:0;
+			background-color: #eee;
+		}
+		.two {
+			top:0;
+			left:20px;
+			background-color: #eff;
+		}
+		.thr{
+			top:0;
+			left:40px;
+			background-color: #0ff;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="table">
+			<table>
+				<tr>
+					<th>Rank</th>
+					<th>Sites</th>
+					<th>Heat</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Google</td>
+					<td>10000</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>FaceBook</td>
+					<td>9990</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Youtube</td>
+					<td>8000</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Baidu</td>
+					<td>7000</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Zhihu</td>
+					<td>6000</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>yellow</td>
+					<td>5000</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>black</td>
+					<td>4000</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>heat</td>
+					<td>3000</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Cav</td>
+					<td>2000</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>KD</td>
+					<td>1000</td>
+				</tr>
+			</table>
+		</div>
+		<br>
+		<div class="input">
+			<input type="text" placeholder="Please input number"></div>
+			<br>
+		<div class="wraper">
+		<div class="banner">
+			<div class="img">
+				<img src="1.jpg" alt="">
+				<img src="2.jpg" alt="">
+				<img src="3.jpg" alt="">
+			</div>
+			<div class="one">1</div>
+			<div class="two">2</div>
+			<div class="thr">3</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+<!-- 
+1. 动画变化的起始点怎么设置？
+2. 动画开始回去的时候都渐变，需要设置什么？  在原状态和最后状态都设置transition属性。
+3. table tr:nth-child(n+2):hover 表示从第2个开始，是n+2
+4. CSS 动画，尤其是三维动画还需要加强学习
+5. translateX 正方向是哪个？
+6. translate 基于原点还是基于当前位置？
+ -->
