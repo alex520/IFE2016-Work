@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>浮动元素中段落</title>
+	<link rel="stylesheet" href="">
+	<style>
+		.fir{
+			width: 300px;
+			height: 400px;
+			background-color: #666;
+			float: left;
+			display: inline;
+
+		}
+		.sec{
+			width: 400px;
+			height: 600px;
+			float: right;
+			background-color: #333;
+			color: #fff;
+			display: inline;
+
+		}
+		.wrap {
+			background-color: #eef;
+			margin:0 auto;
+			width:800px;
+			/*float: left;*/
+
+
+		}
+		.clear {
+			clear:both;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="fir"></div>
+		<div class="sec"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quam, id, nesciunt cum aut vel unde odio est libero ratione quidem corporis consectetur inventore sapiente ut. Laboriosam, molestias obcaecati ipsum.</p></div>
+		<div class="clear">123</div>
+	</div>
+
+</body>
+</html>
+
+<!-- 
+清除浮动：
+1. 底部加入div，设置样式clear:both
+2. wrap设置浮动
+3. wrap添加伪类 .wrap:after {  
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+负margin定位
+ -->

@@ -19,7 +19,18 @@
 	position: absolute;
 	background-image: url(images/01.png);
 }
+#hd .date {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: #d45d5c;
+	font-family: "黑体";
+}
 /*上部*/
+/*.main .top {
+	width: 892px;
+	height: 600px;
+}*/
 .main .top .topl {
 	width: 641px;
 	float: left;
@@ -44,27 +55,82 @@
 	background-color: #eee;
 	/*float: left;*/
 }
-/*头部三栏*/
+
+.main .top .topl .cover {
+	width: 191px;
+	height: 301px;
+	background-color: #333;
+	float: left;
+}
+
+.main .top .topl .cover2 {
+	width: 191px;
+	height: 301px;
+	background-color: #666;
+	float: right;
+}
+/*上部文字*/
+.main .top .topr .rap {
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #000000;
+	border-bottom: 2px #938e8c solid;
+	line-height: 40px;
+}
+.main .top .topr .rap .big {
+	font-size: 30px;
+}
+.main .top .topr .lit {
+	font-family: "楷体";
+	font-size: 12px;
+	line-height: 10px;
+	color: #676767;
+}
+.main .top .topr .lb {
+	font-family: "微软雅黑";
+	font-size: 116px;
+	color: #75b86b;
+	font-style: italic;;
+}
+.main .top .topr .lt {
+	font-family: "微软雅黑";
+	font-size: 55px;
+	color: #cc8091;
+}
+.main .top .topr .lt1 {
+	font-family: "微软雅黑";
+	font-size: 21px;
+	color: #cc8091;
+}
+.main .top .topr .lt2 {
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #cc8091;
+}
+/*上部三栏*/
 .fir {
 	float: left;
 	width: 35%;
-	height: 70px;
+	height: 170px;
 	margin: 44px 0;
-	background-color: #333;
+	background-color: #eee;
+}
+.fir span {
+	font-size: 30px;
+	color: #d2994f;
+	border-bottom: 2px #d2994f solid;
 }
 .sec {
 	float: left;
 	width: 30%;
 	height: 70px;
 	margin: 44px 20px;
-	background-color: #333;
 }
 .thr {
 	float: right;
 	width: 28%;
 	height: 70px;
 	margin: 44px 0;
-	background-color: #333;
 }
 
 /*下部*/
@@ -120,4 +186,27 @@
 /*
 父div浮动了，子div会不会跟着浮动？应该会啊,为什么头部div.img不显示呢？
 绝对定位脱离文档流了影响排版吗？
+很多情况都是，div有宽度没有高度。显示不出来。
+段落间距，line-height和padding都可以设置。
+CSS怎么设置倾斜font-style:italic;
+div会浮动到行内元素后面吗？
+浮动div中添加段落元素，段落内容应该是在div中啊？
+div.top失效
+浮动div里面div浮动，然后文档流是怎么样的？！
+父元素中浮动div怎么把父容器撑起来？？
+
+
+
+
+
+
+
+
+
+
+
+
+
+浮动元素脱离文档流，无法把父元素撑起；
+
 */
